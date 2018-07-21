@@ -109,7 +109,6 @@ private slots:
     void onAttenedClicked();
     void onInfoBtnClicked();
     void onAtteninfoClicked();
-
 };
 
 

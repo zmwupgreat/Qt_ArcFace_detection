@@ -278,7 +278,7 @@ void AiThread::run()
         return;
     }
     QThreadPool threadpool;
-    threadpool.setMaxThreadCount(4);
+    threadpool.setMaxThreadCount(8);
     for(int i = 0; i < Featurefiles.size();i++)
     {
         ComputeSim *computesim = new ComputeSim(this,Featurefiles.at(i));

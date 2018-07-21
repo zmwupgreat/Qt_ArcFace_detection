@@ -300,4 +300,3 @@ MainWidget::~MainWidget()
     delete infomanager;
 }
 
-

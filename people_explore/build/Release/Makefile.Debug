@@ -17,7 +17,7 @@ CXXFLAGS      = -nologo -Zc:wchar_t -FS -Zc:strictStrings -Zc:throwingNew -Zi -M
 INCPATH       = -I..\..\..\people_explore -I. -I..\..\Libs\Opencv\include -I..\..\Libs\ARCFace\include -IF:\Qt\5.8\msvc2015\include -IF:\Qt\5.8\msvc2015\include\QtMultimediaWidgets -IF:\Qt\5.8\msvc2015\include\QtMultimedia -IF:\Qt\5.8\msvc2015\include\ActiveQt -IF:\Qt\5.8\msvc2015\include\QtPrintSupport -IF:\Qt\5.8\msvc2015\include\QtWidgets -IF:\Qt\5.8\msvc2015\include\QtGui -IF:\Qt\5.8\msvc2015\include\QtANGLE -IF:\Qt\5.8\msvc2015\include\QtNetwork -IF:\Qt\5.8\msvc2015\include\QtSql -IF:\Qt\5.8\msvc2015\include\QtCore -Idebug -I. -IF:\Qt\5.8\msvc2015\mkspecs\win32-msvc2015 
 LINKER        = link
 LFLAGS        = /NOLOGO /DYNAMICBASE /NXCOMPAT /DEBUG /SUBSYSTEM:WINDOWS "/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'"
-LIBS          = /LIBPATH:F:\Qt\5.8\msvc2015\lib F:\Qt\5.8\msvc2015\lib\qtmaind.lib /LIBPATH:C:\utils\my_sql\my_sql\lib /LIBPATH:C:\utils\postgresql\pgsql\lib shell32.lib E:\people_explore\people_explore\Libs\Opencv\lib\opencv_world310.lib E:\people_explore\people_explore\Libs\AiFace\lib\AiFace.lib E:\people_explore\people_explore\Libs\ARCFace\libs\libarcsoft_fsdk_face_detection.lib E:\people_explore\people_explore\Libs\ARCFace\libs\libarcsoft_fsdk_face_recognition.lib F:\Qt\5.8\msvc2015\lib\Qt5MultimediaWidgetsd.lib F:\Qt\5.8\msvc2015\lib\Qt5Multimediad.lib F:\Qt\5.8\msvc2015\lib\Qt5AxContainerd.lib /LIBPATH:F:\Qt\5.8\msvc2015\lib F:\Qt\5.8\msvc2015\lib\Qt5AxBased.lib F:\Qt\5.8\msvc2015\lib\Qt5Widgetsd.lib F:\Qt\5.8\msvc2015\lib\Qt5Guid.lib F:\Qt\5.8\msvc2015\lib\Qt5Cored.lib ole32.lib oleaut32.lib user32.lib gdi32.lib advapi32.lib F:\Qt\5.8\msvc2015\lib\Qt5PrintSupportd.lib F:\Qt\5.8\msvc2015\lib\Qt5Widgetsd.lib F:\Qt\5.8\msvc2015\lib\Qt5Guid.lib F:\Qt\5.8\msvc2015\lib\Qt5Networkd.lib F:\Qt\5.8\msvc2015\lib\Qt5Sqld.lib F:\Qt\5.8\msvc2015\lib\Qt5Cored.lib 
+LIBS          = /LIBPATH:F:\Qt\5.8\msvc2015\lib F:\Qt\5.8\msvc2015\lib\qtmaind.lib /LIBPATH:C:\utils\my_sql\my_sql\lib /LIBPATH:C:\utils\postgresql\pgsql\lib shell32.lib E:\people_explore\people_explore\Libs\Opencv\lib\opencv_world310.lib E:\people_explore\people_explore\Libs\ARCFace\libs\libarcsoft_fsdk_face_detection.lib E:\people_explore\people_explore\Libs\ARCFace\libs\libarcsoft_fsdk_face_recognition.lib F:\Qt\5.8\msvc2015\lib\Qt5MultimediaWidgetsd.lib F:\Qt\5.8\msvc2015\lib\Qt5Multimediad.lib F:\Qt\5.8\msvc2015\lib\Qt5AxContainerd.lib /LIBPATH:F:\Qt\5.8\msvc2015\lib F:\Qt\5.8\msvc2015\lib\Qt5AxBased.lib F:\Qt\5.8\msvc2015\lib\Qt5Widgetsd.lib F:\Qt\5.8\msvc2015\lib\Qt5Guid.lib F:\Qt\5.8\msvc2015\lib\Qt5Cored.lib ole32.lib oleaut32.lib user32.lib gdi32.lib advapi32.lib F:\Qt\5.8\msvc2015\lib\Qt5PrintSupportd.lib F:\Qt\5.8\msvc2015\lib\Qt5Widgetsd.lib F:\Qt\5.8\msvc2015\lib\Qt5Guid.lib F:\Qt\5.8\msvc2015\lib\Qt5Networkd.lib F:\Qt\5.8\msvc2015\lib\Qt5Sqld.lib F:\Qt\5.8\msvc2015\lib\Qt5Cored.lib 
 QMAKE         = F:\Qt\5.8\msvc2015\bin\qmake.exe
 IDC           = idc
 IDL           = midl
@@ -2406,7 +2406,8 @@ debug\attendmanager.obj: ..\..\attendmanager.cpp ../../attendmanager.h \
 		F:\Qt\5.8\msvc2015\include\QtWidgets\qlabel.h \
 		F:\Qt\5.8\msvc2015\include\QtWidgets\QToolButton \
 		F:\Qt\5.8\msvc2015\include\QtWidgets\qtoolbutton.h \
-		F:\Qt\5.8\msvc2015\include\QtWidgets\qabstractbutton.h
+		F:\Qt\5.8\msvc2015\include\QtWidgets\qabstractbutton.h \
+		F:\Qt\5.8\msvc2015\include\QtCore\QDebug
 
 debug\cmeracontrol.obj: ..\..\cmeracontrol.cpp ../../cmeracontrol.h \
 		F:\Qt\5.8\msvc2015\include\QtCore\QThread \
@@ -3024,7 +3025,27 @@ debug\aithread.obj: ..\..\aithread.cpp ../../aithread.h \
 		F:\Qt\5.8\msvc2015\include\QtCore\qcontiguouscache.h \
 		F:\Qt\5.8\msvc2015\include\QtCore\qsharedpointer.h \
 		F:\Qt\5.8\msvc2015\include\QtCore\qsharedpointer_impl.h \
-		F:\Qt\5.8\msvc2015\include\QtCore\QDebug
+		F:\Qt\5.8\msvc2015\include\QtCore\QDebug \
+		F:\Qt\5.8\msvc2015\include\QtWidgets\QMessageBox \
+		F:\Qt\5.8\msvc2015\include\QtWidgets\qmessagebox.h \
+		F:\Qt\5.8\msvc2015\include\QtWidgets\qtwidgetsglobal.h \
+		F:\Qt\5.8\msvc2015\include\QtWidgets\qtwidgets-config.h \
+		F:\Qt\5.8\msvc2015\include\QtWidgets\qdialog.h \
+		F:\Qt\5.8\msvc2015\include\QtWidgets\qwidget.h \
+		F:\Qt\5.8\msvc2015\include\QtGui\qpalette.h \
+		F:\Qt\5.8\msvc2015\include\QtGui\qbrush.h \
+		F:\Qt\5.8\msvc2015\include\QtGui\qpixmap.h \
+		F:\Qt\5.8\msvc2015\include\QtGui\qfont.h \
+		F:\Qt\5.8\msvc2015\include\QtGui\qfontmetrics.h \
+		F:\Qt\5.8\msvc2015\include\QtGui\qfontinfo.h \
+		F:\Qt\5.8\msvc2015\include\QtWidgets\qsizepolicy.h \
+		F:\Qt\5.8\msvc2015\include\QtGui\qcursor.h \
+		F:\Qt\5.8\msvc2015\include\QtGui\qkeysequence.h \
+		F:\Qt\5.8\msvc2015\include\QtGui\qevent.h \
+		F:\Qt\5.8\msvc2015\include\QtCore\qurl.h \
+		F:\Qt\5.8\msvc2015\include\QtCore\qurlquery.h \
+		F:\Qt\5.8\msvc2015\include\QtGui\qvector2d.h \
+		F:\Qt\5.8\msvc2015\include\QtGui\qtouchdevice.h
 
 debug\loadingdialog.obj: ..\..\loadingdialog.cpp ../../loadingdialog.h \
 		F:\Qt\5.8\msvc2015\include\QtWidgets\QDialog \
