@@ -279,7 +279,7 @@ void AiThread::run()
     }
     QThreadPool threadpool;
     threadpool.setMaxThreadCount(8);
-    for(int i = 0; i < Featurefiles.size();i++)
+    for(int i = Featurefiles.size()-1; i >=0 ; i--)
     {
         ComputeSim *computesim = new ComputeSim(this,Featurefiles.at(i));
         if(!computesim->autoDelete())
